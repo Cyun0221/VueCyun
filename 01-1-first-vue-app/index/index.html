@@ -11,9 +11,9 @@
 <body>
     <div id="app">
         <h1>播放列表</h1>
-        <input type="text" placeholder="请输入要查找的歌曲名称" class="search" />
+        <input type="text" placeholder="请输入要查找的歌曲名称" class="search" v-model="searchTerm" />
         <ul>
-            <li v-for="song in playlist">{{song}}</li>
+            <li v-for="song in filteredPlaylist">{{song}}</li>
         </ul>
     </div>
     <script src="index.js"></script>
