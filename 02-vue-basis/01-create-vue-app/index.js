@@ -9,6 +9,21 @@ const app = Vue.createApp({
                 city: "suzhou",
             },
             link: "http://www.baidu.com",
+            todos: ["学数学", "学408", "学英语", "学政治"],
+            istodos: [
+                {
+                    complete: true,
+                    content: "学数学"
+                }, 
+                {
+                    complete: false,
+                    content: "学语文"
+                },
+                {
+                    complete: true,
+                    content: "学英文"
+                }
+            ]
         }
     },
 });

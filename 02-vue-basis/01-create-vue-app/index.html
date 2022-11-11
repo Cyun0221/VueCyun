@@ -18,7 +18,26 @@
         <a v-bind:href="link">点击我跳转百度</a>
         &nbsp;
         <a :href="link">点击我跳转百度(省略v-bind写法)</a>
-
+        <hr>
+        <h3>v-for的用法</h3>
+        <div>不带index的无序数组</div>
+        <ul>
+            <li v-for="todo in todos">
+                {{ todo }}
+            </li>
+        </ul>
+        <div>带index的数组</div>
+        <ul>
+            <li v-for="(todo, index) in todos">
+                {{ index }}: {{ todo }}
+            </li>
+        </ul>
+        <div>对象构成的数组</div>
+        <ul>
+            <li v-for="istodo in istodos">
+                <input type="checkbox" :checked="istodo.complete"> {{ istodo.content }}
+            </li> 
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>
