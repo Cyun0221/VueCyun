@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../lib/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Vue Data属性</title>
+</head>
+<body>
+    <div id="app">
+        <h1>你好，我是{{ name }}</h1>
+        <h2>我来自{{ address.city }}</h2>
+        <hr>
+        <h3>v-bind的用法</h3>
+        <div>响应式地绑定一个 attribute</div>
+        <a v-bind:href="link">点击我跳转百度</a>
+        &nbsp;
+        <a :href="link">点击我跳转百度(省略v-bind写法)</a>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
